@@ -1,12 +1,24 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discovery Breakfast Club</title>
+    <link rel="stylesheet" href="breakfast.css">
 </head>
 <body>
+    <section class="content">
+        <h1>Discovery Breakfast Club</h1>
+        <h3>This week&apos;s supplier: </h3>
+        <h2 class="this-supplier">Undefined</h2>
+        <h3>Next week&apos;s supplier: </h3>
+        <h2 class="next-supplier">Undefined</h2>
+    </section>
 <script>
 var dates = [];
 {% for i in data %}
-dates.push({name: "{{ i[0] }}", date: new date({{ i[1].year }}, {{ i[1].month }}, {{ i[1].day }}) })
+dates.push({name: "{{ i[0] }}", date: new Date({{ i[1].year }}, {{ (i[1].month)-1 }}, {{ i[1].day }}) });
 {%- endfor %}
 </script>
+<script src="breakfast.js"></script>
 </body>
 </html>

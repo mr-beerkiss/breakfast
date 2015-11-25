@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    background-image: url('breakfast.jpg');
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+.content {
+    
+    background-color: ghostwhite;
+    opacity: .9;
+    box-shadow: -2px -2px 5px black, 2px 2px 5px black;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    min-width: 300px;
+    min-height: 300px;
+
+
+    border-radius: 5px;
+
+    padding: 0 32px;
+
+
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: 125%;
+    }
+    .content {
+        min-width: 400px;
+        min-height: 400px;
+    }
+}
