@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var dates = [];
+{% for i in data %}
+dates.push({name: "{{ i[0] }}", date: new date({{ i[1].year }}, {{ i[1].month }}, {{ i[1].day }}) })
+{%- endfor %}
+</script>
+</body>
+</html>
