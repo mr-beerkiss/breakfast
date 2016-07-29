@@ -1,0 +1,23 @@
+{
+  "name": "breakfast",
+  "version": "1.0.0",
+  "description": "### dependencies ``` arrow jinja2 ``` ### Examples Usage ``` python breakfast.py -s 2015-11-01 -e 2015-12-31 -p Darren Mikolaj Andrea Nick Priyanka > sample.html ```",
+  "main": "breakfast.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-beerkiss/breakfast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-beerkiss/breakfast/issues"
+  },
+  "homepage": "https://github.com/mr-beerkiss/breakfast#readme",
+  "devDependencies": {
+    "moment": "^2.14.1"
+  }
+}
