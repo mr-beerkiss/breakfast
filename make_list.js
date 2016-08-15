@@ -44,6 +44,6 @@ class BreakfastList {
 }
 
 const bList = new BreakfastList();
-bList.generateList('20160804');
+bList.generateList('2016-08-04 12:00:00 BST');
 
 console.dir(JSON.stringify(bList.list));
