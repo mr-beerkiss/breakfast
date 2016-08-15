@@ -30,7 +30,7 @@ class BreakfastList {
 
     startDate = moment(startDate || Date.now());
 
-    for ( let weekIdx=0, nameIdx = 0; weekIdx < this.weeks; weekIdx += 1, nameIdx =+ 1 ) {
+    for ( let weekIdx=0, nameIdx = 0; weekIdx < this.weeks; weekIdx += 1, nameIdx += 1 ) {
       if ( nameIdx === this.names.length ) nameIdx = 0;
 
       this.list.push({
