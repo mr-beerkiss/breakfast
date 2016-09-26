@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict';
 
 const moment = require('moment');
@@ -16,21 +17,24 @@ class BreakfastList {
       'Priyanka',
       'Hugo',
       'Nick',
-      'Ilesh',
+      //'Ilesh',
       'Juan',
       'Andrea',
       'Naresh',
       'Bence',
-      'Seemi',
+      //'Seemi',
       'Darren'
     ];
   }
 
-  generateList(startDate) {
+  generateList(startDate, startName) {
+
+    let startIdx = this.names.indexOf(startName);
+    startIdx = startIdx < 0 ? 0 : startIdx;
 
     startDate = moment(startDate || Date.now());
 
-    for ( let weekIdx=0, nameIdx = 0; weekIdx < this.weeks; weekIdx += 1, nameIdx += 1 ) {
+    for ( let weekIdx=0, nameIdx = startIdx; weekIdx < this.weeks; weekIdx += 1, nameIdx += 1 ) {
       if ( nameIdx === this.names.length ) nameIdx = 0;
 
       this.list.push({
@@ -44,6 +48,6 @@ class BreakfastList {
 }
 
 const bList = new BreakfastList();
-bList.generateList('2016-08-04 12:00:00 BST');
+bList.generateList('2016-09-29 12:00:00 BST', 'Bence');
 
 console.dir(JSON.stringify(bList.list));
