@@ -18,6 +18,7 @@ class BreakfastList {
       'Hugo',
       'Nick',
       'Conor',
+      'Sugu',
       'Juan',
       'Andrea',
       'Naresh',
