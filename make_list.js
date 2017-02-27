@@ -21,7 +21,6 @@ class BreakfastList {
       'Sugu',
       'Juan',
       'Andrea',
-      'Naresh',
       'Bence',
       'Darren'
     ];
@@ -48,6 +47,6 @@ class BreakfastList {
 }
 
 const bList = new BreakfastList();
-bList.generateList('2017-01-12T12:00:00Z', 'Hugo');
+bList.generateList('2017-03-02T12:00:00Z', 'Darren');
 
 console.dir(JSON.stringify(bList.list));
