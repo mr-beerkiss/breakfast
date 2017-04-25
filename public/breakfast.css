@@ -5,12 +5,26 @@ html, body {
 }
 
 body {
-    background-image: url('breakfast.jpg');
+    background-image: url('breakfast-face.jpg');
     background-size: cover;
+}
+
+body.awesome {
+    background-image: url('breakfast-face-animated.gif');
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
+}
+
+.hidden {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+.preload-image {
+    width: 1px;
+    height: 1px;
 }
 
 .content {
@@ -43,5 +57,26 @@ h1, h2, h3, h4, h5 {
     .content {
         min-width: 400px;
         min-height: 400px;
+    }
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        background-position: -200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-position: -300px;
     }
 }
